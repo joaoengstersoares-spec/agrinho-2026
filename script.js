@@ -1,25 +1,30 @@
-function mostrarMensagem(){
-
-document.getElementById("mensagem").innerHTML=
-
-"🌱 O Agro é Forte! Produzir com responsabilidade é construir um futuro sustentável para todos.";
-
+// MENSAGEM FINAL
+function mensagem(){
+document.getElementById("msg").innerHTML =
+"🌱 O Agro é essencial para o mundo. Produzir com sustentabilidade é garantir o futuro.";
 }
 
-const imagens=document.querySelectorAll(".card img,.drone");
+// BOTÃO VOLTAR AO TOPO
+const topo = document.getElementById("topo");
 
-imagens.forEach((img)=>{
-
-img.addEventListener("click",()=>{
-
-img.style.transform="scale(1.2) rotate(2deg)";
-
-setTimeout(()=>{
-
-img.style.transform="scale(1)";
-
-},500);
-
+window.addEventListener("scroll", () => {
+if(window.scrollY > 300){
+topo.style.display = "block";
+}else{
+topo.style.display = "none";
+}
 });
 
+topo.addEventListener("click", () => {
+window.scrollTo({top:0, behavior:"smooth"});
+});
+
+// CLIQUE NAS IMAGENS
+document.querySelectorAll("img").forEach(img => {
+img.addEventListener("click", () => {
+img.style.transform = "scale(1.2)";
+setTimeout(() => {
+img.style.transform = "scale(1)";
+}, 400);
+});
 });
