@@ -3,76 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Brasil</title>
+    <title>Agro é Forte</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1>🌱 Agro Brasil</h1>
-    <p>O campo alimenta o mundo.</p>
+
+    <nav>
+        <h2>🌱 AGRO É FORTE</h2>
+
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#sustentavel">Sustentabilidade</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="hero">
+
+        <div class="texto">
+            <h1>O Agro Move o Mundo</h1>
+
+            <p>
+                Produção, tecnologia, inovação e sustentabilidade
+                para alimentar o presente e construir o futuro.
+            </p>
+
+            <button onclick="mensagem()">Conheça Mais</button>
+
+        </div>
+
+        <img src="imagens/banner.png">
+
+    </div>
+
 </header>
 
-<section class="banner">
-    <img src="imagens/banner.jpg" alt="Plantação">
-</section>
+<section id="sobre">
 
-<section class="sobre">
-    <h2>Sobre o Agro</h2>
+<h2>🌾 O Agro é Essencial</h2>
 
-    <p>
-        O agronegócio é responsável pela produção de alimentos,
-        geração de empregos e desenvolvimento econômico.
-        A agricultura moderna utiliza tecnologia para aumentar
-        a produtividade e preservar os recursos naturais.
-    </p>
+<p>
+
+O agronegócio está presente em nossa alimentação,
+na economia e na geração de milhões de empregos.
+Cada semente plantada representa desenvolvimento,
+progresso e qualidade de vida.
+
+</p>
+
 </section>
 
 <section class="cards">
 
-    <div class="card">
-        <img src="imagens/plantacao.jpg">
-        <h3>🌾 Plantações</h3>
-        <p>As plantações são a base da produção agrícola.</p>
-    </div>
+<div class="card">
 
-    <div class="card">
-        <img src="imagens/cultivo.jpg">
-        <h3>🌿 Cultivo</h3>
-        <p>O cultivo exige planejamento, irrigação e manejo adequado.</p>
-    </div>
+<h3>🚜 Produção</h3>
 
-    <div class="card">
-        <img src="imagens/colheita.jpg">
-        <h3>🚜 Colheita</h3>
-        <p>A colheita representa o resultado do trabalho no campo.</p>
-    </div>
+<p>
+
+O campo produz alimentos para milhões
+de pessoas todos os dias.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌱 Sustentabilidade</h3>
+
+<p>
+
+Produzir respeitando a natureza
+é garantir alimento para as futuras gerações.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💻 Tecnologia</h3>
+
+<p>
+
+Drones, satélites, inteligência artificial
+e máquinas inteligentes transformam o campo.
+
+</p>
+
+</div>
 
 </section>
 
-<section class="importancia">
+<section id="tecnologia" class="verde">
 
-<h2>Importância do Agro</h2>
+<h2>🚀 Agricultura do Futuro</h2>
 
-<ul>
-<li>🍞 Produção de alimentos</li>
-<li>🌎 Exportações</li>
-<li>💼 Geração de empregos</li>
-<li>🚜 Desenvolvimento tecnológico</li>
-<li>🌱 Sustentabilidade</li>
+<p>
 
-</ul>
+A agricultura moderna utiliza inovação para aumentar
+a produtividade, economizar água, reduzir desperdícios
+e preservar o meio ambiente.
 
-<button onclick="mostrarMensagem()">Saiba Mais</button>
+</p>
 
-<p id="mensagem"></p>
+</section>
+
+<section id="sustentavel">
+
+<h2>🌍 Um Futuro Sustentável</h2>
+
+<p>
+
+O agro sustentável busca equilíbrio entre
+produção, preservação ambiental e responsabilidade social.
+Cuidar da terra hoje significa garantir alimento amanhã.
+
+</p>
 
 </section>
 
 <footer>
 
-<p>© 2026 Agro Brasil</p>
+<h2>🌿 Agro é Forte</h2>
+
+<p id="msg"></p>
+
+<p>© 2026 - Desenvolvido com HTML, CSS e JavaScript</p>
 
 </footer>
 
