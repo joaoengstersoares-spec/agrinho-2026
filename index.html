@@ -1,150 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Agro é Forte | Futuro Sustentável</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<header>
+<!-- BOTÃO TOPO -->
+<button id="topo">⬆</button>
+
+<!-- HEADER -->
+<header class="hero">
 
 <nav>
-
 <h2>🌱 Agro é Forte</h2>
 
 <ul>
-
 <li><a href="#sobre">Sobre</a></li>
+<li><a href="#tecnologia">Tecnologia</a></li>
+<li><a href="#sustentavel">Sustentável</a></li>
 <li><a href="#galeria">Galeria</a></li>
-<li><a href="#futuro">Futuro</a></li>
-
 </ul>
-
 </nav>
 
-<section class="hero">
-
-<div class="texto">
+<div class="hero-content">
 
 <h1>AGRO É FORTE</h1>
-
-<h3>🌎 Futuro Sustentável</h3>
+<h2>Futuro Sustentável</h2>
 
 <p>
-
-O agronegócio produz alimentos, gera empregos, impulsiona a economia
-e preserva os recursos naturais através da inovação e da sustentabilidade.
-
+O agronegócio une tecnologia, inovação e respeito à natureza
+para alimentar o mundo e construir um futuro melhor.
 </p>
 
-<button onclick="mostrarMensagem()">
-
-Conheça Mais
-
-</button>
+<button onclick="mensagem()">Saiba Mais</button>
 
 </div>
-
-<div class="imagem">
-
-<img src="img/banner.jpg">
-
-</div>
-
-</section>
 
 </header>
 
+<!-- SOBRE -->
 <section id="sobre">
 
 <h2>🌾 Sobre o Agro</h2>
 
 <p>
-
-O agronegócio brasileiro é referência mundial pela qualidade da produção,
-uso de tecnologia, preservação ambiental e compromisso com o futuro.
-Cada plantação representa desenvolvimento, inovação e esperança.
-
+O agronegócio é responsável pela produção de alimentos,
+geração de empregos e desenvolvimento econômico.
+Ele conecta o campo à cidade e é essencial para a vida moderna.
 </p>
 
 </section>
 
-<section id="galeria">
+<!-- TECNOLOGIA -->
+<section id="tecnologia" class="box">
 
-<h2>📸 Plantações</h2>
+<h2>🚜 Tecnologia no Campo</h2>
 
 <div class="cards">
 
 <div class="card">
-
-<img src="img/plantacao1.jpg">
-
-<h3>🌽 Milho</h3>
-
-<p>Produção moderna com alta tecnologia.</p>
-
+<img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae">
+<h3>Drones</h3>
+<p>Monitoramento de plantações com precisão.</p>
 </div>
 
 <div class="card">
-
-<img src="img/plantacao2.jpg">
-
-<h3>🌱 Soja</h3>
-
-<p>Uma das maiores riquezas do agronegócio brasileiro.</p>
-
+<img src="https://images.unsplash.com/photo-1592982537447-6f2a0f1c6a60">
+<h3>Tratores modernos</h3>
+<p>Mais produtividade e eficiência no campo.</p>
 </div>
 
 <div class="card">
-
-<img src="img/plantacao3.jpg">
-
-<h3>🌾 Trigo</h3>
-
-<p>Alimento essencial para milhões de pessoas.</p>
-
+<img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449">
+<h3>IA no agro</h3>
+<p>Decisões inteligentes para produção sustentável.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="futuro">
+<!-- SUSTENTABILIDADE -->
+<section id="sustentavel">
 
 <h2>🌍 Futuro Sustentável</h2>
 
 <p>
-
-Com inovação, inteligência artificial, agricultura de precisão,
-energia limpa e preservação ambiental, o agro constrói um futuro
-mais sustentável para toda a sociedade.
-
+A sustentabilidade garante que o solo, a água e os recursos naturais
+sejam preservados para as próximas gerações.
 </p>
 
-<img src="img/drone.jpg" class="drone">
+<div class="banner-img">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+</div>
 
 </section>
 
+<!-- GALERIA -->
+<section id="galeria">
+
+<h2>📸 Plantações</h2>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+<img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0">
+<img src="https://images.unsplash.com/photo-1602524819408-5f5b5c6a3c31">
+<img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8">
+
+</div>
+
+</section>
+
+<!-- RODAPÉ -->
 <footer>
 
-<p id="mensagem"></p>
+<h2>🌱 Agro é Forte</h2>
+<p>Futuro Sustentável • Projeto Agrinho</p>
 
-<h3>🌱 Agro é Forte • Futuro Sustentável</h3>
-
-<p>Projeto Agrinho 2026</p>
+<p id="msg"></p>
 
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
