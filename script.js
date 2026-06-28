@@ -1,6 +1,11 @@
-function mensagem(){
+const imagens = document.querySelectorAll(".card img");
 
-document.getElementById("msg").innerHTML =
-"🌱 O futuro é verde. O agro produz alimentos, preserva recursos e impulsiona um mundo mais sustentável.";
+imagens.forEach(img => {
 
-}
+    img.addEventListener("click", () => {
+
+        img.classList.toggle("animar");
+
+    });
+
+});
