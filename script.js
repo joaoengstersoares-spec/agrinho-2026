@@ -1,6 +1,6 @@
-function mostrarMensagem(){
+function mensagem(){
 
-    document.getElementById("mensagem").innerHTML =
-    "🌱 O agronegócio é essencial para alimentar milhões de pessoas, gerar empregos e fortalecer a economia do país.";
+document.getElementById("msg").innerHTML =
+"🌱 O futuro é verde. O agro produz alimentos, preserva recursos e impulsiona um mundo mais sustentável.";
 
 }
