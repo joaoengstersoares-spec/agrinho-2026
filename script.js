@@ -1,11 +1,6 @@
-const imagens = document.querySelectorAll(".card img");
+function mostrarMensagem(){
 
-imagens.forEach(img => {
+    document.getElementById("mensagem").innerHTML =
+    "🌱 O agronegócio é essencial para alimentar milhões de pessoas, gerar empregos e fortalecer a economia do país.";
 
-    img.addEventListener("click", () => {
-
-        img.classList.toggle("animar");
-
-    });
-
-});
+}
