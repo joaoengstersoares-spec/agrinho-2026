@@ -1,57 +1,46 @@
-.hero{
-    height:100vh;
-    background:url("imagens/banner.jpg") center center/cover no-repeat;
+.galeria{
     display:flex;
     justify-content:center;
-    align-items:center;
+    flex-wrap:wrap;
+    gap:40px;
+    padding:60px;
+}
+
+.card{
+    width:350px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+    transition:.5s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 40px rgba(0,0,0,.3);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:0.6s;
+    cursor:pointer;
+}
+
+/* Zoom e rotação ao passar o mouse */
+.card:hover img{
+    transform:scale(1.15) rotate(2deg);
+    filter:brightness(1.1);
+}
+
+.card h3{
     text-align:center;
-    position:relative;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.45);
-}
-
-.overlay{
-    position:relative;
-    color:white;
-    max-width:800px;
-    padding:20px;
-}
-
-.overlay h1{
-    font-size:70px;
-    text-transform:uppercase;
-    letter-spacing:4px;
-    text-shadow:4px 4px 12px rgba(0,0,0,.5);
-}
-
-.overlay h2{
+    color:#2e7d32;
     margin:20px 0;
-    color:#90ee90;
-    font-size:38px;
 }
 
-.overlay p{
-    font-size:20px;
-    line-height:1.8;
-    margin-bottom:40px;
-}
-
-.botao{
-    padding:18px 45px;
-    background:#43a047;
-    color:white;
-    text-decoration:none;
-    border-radius:40px;
-    font-size:20px;
-    transition:.4s;
-}
-
-.botao:hover{
-    background:#2e7d32;
-    transform:scale(1.08);
+.card p{
+    padding:0 20px 25px;
+    text-align:center;
 }
